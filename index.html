@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Redirect</title>
+    <script>
+        // Array of your 4 Google Form links
+        var forms = [
+            'https://docs.google.com/forms/d/e/1FAIpQLScOLAKW0jY6hG7qhsSCT168ujDDy3IV3zvfMuGrd9S9jsRp-A/viewform?usp=dialog',
+            'https://docs.google.com/forms/d/e/1FAIpQLSdOxrjh_GIAIsTIlTG0YozqrMO9EBZk_DrjT6_z3dfz-W0mzQ/viewform?usp=publish-editor',
+            'https://docs.google.com/forms/d/e/1FAIpQLSfAesHMkzUJumbSNPip53M-vubqWQlk7WUegz0cLSzhlCat-A/viewform?usp=dialog',
+            'https://docs.google.com/forms/d/e/1FAIpQLSevqKbpFdO3OLG3IuPedCxxhYm5rddnbDwN5RouvUqx-TqEmg/viewform?usp=dialog'
+        ];
+        
+        // Randomly select one form
+        var randomIndex = Math.floor(Math.random() * 4);
+        
+        // Redirect immediately
+        window.location.href = forms[randomIndex];
+    </script>
+</head>
+<body>
+    <p>Redirecting to survey...</p>
+</body>
+</html>
